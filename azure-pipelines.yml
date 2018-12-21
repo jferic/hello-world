@@ -10,7 +10,7 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 variables:
-  imageName: 'test-b:$(build.buildId)'
+  imageName: 'test-c:$(build.buildId)'
 
 steps:
 - script: docker build -f Dockerfile.build -t $(imageName) .
